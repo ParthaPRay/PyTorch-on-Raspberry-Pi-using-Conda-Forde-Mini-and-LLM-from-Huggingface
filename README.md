@@ -160,7 +160,7 @@
 
 	This command fetches information about the ‘GPT-2’ model from Hugging Face Hub, ensuring that the package is working as expected.
 
-2. **Install ‘transformers’ via Conda-Forge**
+4. **Install ‘transformers’ via Conda-Forge**
 
 ```bash
  	$ conda install -c conda-forge transformers
@@ -172,7 +172,7 @@
  	$ python -c "import transformers; print(transformers.__version__)"
 ```
 
-3. **Install ‘accelerate’ via Conda-Forge**
+5. **Install ‘accelerate’ via Conda-Forge**
 
 ```bash
  	$ conda install -c conda-forge accelerate
@@ -183,7 +183,7 @@
  	$ python -c "import accelerate; print(accelerate.__version__)"
 ```
 
-4. **Install other necessary files via Conda-Forge or pip**
+6. **Install other necessary files via Conda-Forge or pip**
 
 
 # Optional Step: Install ‘bitsandbytes’ via pip, If Required 
@@ -242,19 +242,19 @@ Normally it should be loaded below:
 
 Based on the above location do follows:
 
-	* Delete Model Directory:
+2.1. **Delete Model Directory:**
 
 ```bash 
  		$ rm -rf /home/pi/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M-Instruct
 ```
 
-	* Delete Lock File Directory:
+2.2. **Delete Lock File Directory:**
 
 ```bash 
  		$ rm -rf /home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB--SmolLM-135M-Instruct
 ```
 
-	* Finally, Verify Deletion:
+2.3. **Finally, Verify Deletion:**
 
 ```bash 
  		$ ls /home/pi/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M-Instruct
