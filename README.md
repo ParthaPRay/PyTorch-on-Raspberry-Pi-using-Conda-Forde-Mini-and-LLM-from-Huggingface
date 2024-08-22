@@ -261,7 +261,7 @@ Based on the above location do follows:
 ```
 ```bash 
  		$ ls /home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB--SmolLM-135M-Instruct
-```bash 
+``` 
 
 	It should say that no such file exists.
 
