@@ -1,19 +1,21 @@
-# PyTorch-on-Raspberry-Pi-using-Conda-Forde-Mini-and-LLM-from-Huggingface
-This repo contains information and guidelines to install PyTorch on Raspberry Pi using Conda-Forge Mini and Huggingface Libararies to Run a LLM Locally 
 
+# Running a LLM on Raspberry Pi using conda-forge mini, torch and huggingface libraries such as transformers, accelerate, bitsandbytes
 
+* **LLM:** SmolLM-135M-Instruct
+* **Conda Package Manager:** Conda-Forge Mini
+* **Libraries:**  pytorch, huggingface_hub, transformers, accelerate, bitsandbytes
 
-Running a LLM on Raspberry Pi using conda-forge mini, torch and huggingface libraries such as transformers, accelerate, bitsandbytes
+# Finding Information about Raspberry Pi
 
-LLM: SmolLM-135M-Instruct
-Python Tool: Conda-Forge Mini
-Libraries:  pytorch, huggingface_hub, transformers, accelerate, bitsandbytes
+1. **Check the OS of the Raspberry Pi**
 
-Finding Information about Raspberry Pi
+   ```bash
+   $ cat /etc/os-release
+   ```
 
-1.	Check the OS of the Raspberry Pi 
-$ cat /etc/os-release
 Output should be somewhat as below:
+
+```bash
 PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
 NAME="Debian GNU/Linux"
 VERSION_ID="12"
@@ -23,14 +25,16 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
+ ```
+
 This means the Raspberry Pi OS is “bookworm” 
-2.	Next, check the architecture of Raspberry Pi
+3.	Next, check the architecture of Raspberry Pi
 $ uname -a
 Output should be somewhat as below:
 Linux raspberrypi 6.6.28+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.6.28-1+rpt1 (2024-04-22) aarch64 GNU/Linux
 This means the Raspberry Pi architecture is “aarch64” 
 
-3.	Then, check the kernel bit size of Raspberry Pi
+4.	Then, check the kernel bit size of Raspberry Pi
 $ getconf LONG_BIT
 Output should be somewhat as below:
 64
