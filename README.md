@@ -15,7 +15,7 @@
 
     Output should be somewhat as below:
 
-	```bash
+```bash
 	PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
 	NAME="Debian GNU/Linux"
 	VERSION_ID="12"
@@ -25,7 +25,7 @@
 	HOME_URL="https://www.debian.org/"
 	SUPPORT_URL="https://www.debian.org/support"
 	BUG_REPORT_URL="https://bugs.debian.org/"
-	 ```
+```
 
 	This means the Raspberry Pi OS is **“bookworm”**.
 
@@ -37,9 +37,9 @@
    
 	Output should be somewhat as below:
 
-	   ```bash
+	```bash
 	Linux raspberrypi 6.6.28+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.6.28-1+rpt1 (2024-04-22) aarch64 GNU/Linux
-	   ```
+	```
    
 	This means the Raspberry Pi architecture is **“aarch64”**. 
 
