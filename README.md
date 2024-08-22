@@ -65,7 +65,7 @@
 	$ wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 ```
 
-	**Accept all**
+	Accept all
 
 ```bash
 	$ bash Miniforge3-$(uname)-$(uname -m).sh
@@ -73,7 +73,7 @@
 
 	Accept all
 
-	**Optional**: If you want to **prevent** Conda from **automatically activating the (base)** environment every time you open a new terminal, you can run: 
+**Optional:** If you want to **prevent** Conda from **automatically activating the (base)** environment every time you open a new terminal, you can run: 
 
  ```bash
 	$ conda config --set auto_activate_base false
@@ -129,48 +129,48 @@
 
 2.1. **Option 1:** 
 
-	```bash
+```bash
  	$ python -c "import torch; print(torch.__version__)"
-  	```
+```
    
 	OR
  
 2.2. **Option 2:**
 
-	```bash
+```bash
 	$ python3
 	$ import torch
 	$ torch.__version__
-	```
+```
 	Huggingface Related Libraries Installation via Conda-Forge Channel.
 
 3. **Install ‘huggingface_hub’ from Conda-Forge**
 
 	Use the conda-forge channel to install the huggingface_hub package:
 
-	```bash
+```bash
  	$ conda install -c conda-forge huggingface_hub
- 	```
+```
 
-	**Optional:** After installation, you can verify that huggingface_hub is installed correctly by running:
+**Optional:** After installation, you can verify that huggingface_hub is installed correctly by running:
 
-	```bash
+```bash
  	$ python -c "from huggingface_hub import model_info; print(model_info('gpt2'))"
- 	```
+```
 
 	This command fetches information about the ‘GPT-2’ model from Hugging Face Hub, ensuring that the package is working as expected.
 
 2. **Install ‘transformers’ via Conda-Forge**
 
-	```bash
+```bash
  	$ conda install -c conda-forge transformers
- 	```
+```
 
 	**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
 
-	```bash
+```bash
  	$ python -c "import transformers; print(transformers.__version__)"
- 	```
+```
 
 3. **Install ‘accelerate’ via Conda-Forge**
 
