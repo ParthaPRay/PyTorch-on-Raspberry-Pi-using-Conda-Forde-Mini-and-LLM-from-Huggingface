@@ -259,19 +259,9 @@ Based on the above location do follows:
 ```bash 
  		$ ls /home/pi/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M-Instruct
 ```
-
-		It should show below:
-```bash 
-		ls: cannot access '/home/pi/.cache/huggingface/hub/models--HuggingFaceTB-- SmolLM-135M-Instruct': No such file or directory
-```
 ```bash 
  		$ ls /home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB--SmolLM-135M-Instruct
 ```bash 
 
-               It should show below:
-
-```bash 
-		ls: cannot access '/home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB-- SmolLM-135M-Instruct ': No such file or directory
-```
-
+	It should say that no such file exists.
 
