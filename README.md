@@ -27,20 +27,35 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
  ```
 
-This means the Raspberry Pi OS is “bookworm” 
-3.	Next, check the architecture of Raspberry Pi
-$ uname -a
+This means the Raspberry Pi OS is **“bookworm”**.
+
+2. **Next, check the architecture of Raspberry Pi**
+
+   ```bash
+	$ uname -a
+   ```
 Output should be somewhat as below:
+
+   ```bash
 Linux raspberrypi 6.6.28+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.6.28-1+rpt1 (2024-04-22) aarch64 GNU/Linux
-This means the Raspberry Pi architecture is “aarch64” 
+   ```
+This means the Raspberry Pi architecture is **“aarch64”**. 
 
-4.	Then, check the kernel bit size of Raspberry Pi
-$ getconf LONG_BIT
+3. **Then, check the kernel bit size of Raspberry Pi**
+
+   ```bash
+	$ getconf LONG_BIT
+   ```
 Output should be somewhat as below:
-64
-This means the Raspberry Pi kernel bit size is 64 bit.
 
-Install Conda-Forge Mini
+   ```bash
+	64
+   ```
+
+This means the Raspberry Pi kernel bit size is **64 bit**.
+
+
+# Install Conda-Forge Mini
 
 4.	Install conda-forge mini as per https://github.com/conda-forge/miniforge?tab=readme-ov-file
 Run below commands:
