@@ -37,22 +37,22 @@
    
 	Output should be somewhat as below:
 
-	```bash
+```bash
 	Linux raspberrypi 6.6.28+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.6.28-1+rpt1 (2024-04-22) aarch64 GNU/Linux
-	```
+```
    
 	This means the Raspberry Pi architecture is **“aarch64”**. 
 
 3. **Then, check the kernel bit size of Raspberry Pi**
 
-	   ```bash
+```bash
 		$ getconf LONG_BIT
-	   ```
+```
 	Output should be somewhat as below:
 	
-	   ```bash
+```bash
 		64
-	   ```
+```
 	
 	This means the Raspberry Pi kernel bit size is **64 bit**.
 
@@ -61,23 +61,23 @@
 
 1. **Install conda-forge mini as per https://github.com/conda-forge/miniforge?tab=readme-ov-file**
 
-   	```bash
+```bash
 	$ wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
-	```
+```
 
 	**Accept all**
 
-	```bash
+```bash
 	$ bash Miniforge3-$(uname)-$(uname -m).sh
-	```
+```
 
 	Accept all
 
 	**Optional**: If you want to **prevent** Conda from **automatically activating the (base)** environment every time you open a new terminal, you can run: 
 
- 	```bash
+ ```bash
 	$ conda config --set auto_activate_base false
-	```
+```
  
 	After this step, the conda-forge mini should be successfully installed on Raspberry Pi.
 
