@@ -261,10 +261,9 @@ Based on the above location do follows:
 ```
 
 		It should show below:
-
-			```bash 
-   				ls: cannot access '/home/pi/.cache/huggingface/hub/models--HuggingFaceTB-- SmolLM-135M-Instruct': No such file or directory
-       			```
+```bash 
+		ls: cannot access '/home/pi/.cache/huggingface/hub/models--HuggingFaceTB-- SmolLM-135M-Instruct': No such file or directory
+```
 ```bash 
  		$ ls /home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB--SmolLM-135M-Instruct
 ```bash 
@@ -272,7 +271,7 @@ Based on the above location do follows:
                It should show below:
 
 ```bash 
-				ls: cannot access '/home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB-- SmolLM-135M-Instruct ': No such file or directory
+		ls: cannot access '/home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB-- SmolLM-135M-Instruct ': No such file or directory
 ```
 
 
