@@ -166,7 +166,7 @@
  	$ conda install -c conda-forge transformers
 ```
 
-	**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
+**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
 
 ```bash
  	$ python -c "import transformers; print(transformers.__version__)"
@@ -174,14 +174,14 @@
 
 3. **Install ‘accelerate’ via Conda-Forge**
 
-	```bash
+```bash
  	$ conda install -c conda-forge accelerate
- 	```
-	**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
+```
+**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
 
-	```bash
+```bash
  	$ python -c "import accelerate; print(accelerate.__version__)"
- 	```
+```
 
 4. **Install other necessary files via Conda-Forge or pip**
 
@@ -190,22 +190,22 @@
 
 As bitsandbytes is not available for aarch64 platform via Conda-Forge, so use pip3 to install it
 
-	```bash
+```bash
 	$ pip3 install bitsandbytes
- 	```
+```
 
-	**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
+**Optional:** Verify the Installation: To verify that the installation was successful, you can try importing the library in Python:
 
-	```bash
+```bash
  	$ python3 -c "import bitsandbytes as bnb; print(bnb.__version__)"
-  	```
+```
 
 
 # Load the LLM from Huggingface and Running
 
-1.** Talk to LLM ‘SmolLM-135M-Instruct’**
+1. **Talk to LLM ‘SmolLM-135M-Instruct’**
 
-	```python
+```python
 	from transformers import AutoModelForCausalLM, AutoTokenizer
 	checkpoint = "HuggingFaceTB/SmolLM-135M-Instruct"
 	
@@ -220,7 +220,7 @@ As bitsandbytes is not available for aarch64 platform via Conda-Forge, so use pi
 	inputs = tokenizer.encode(input_text, return_tensors="pt").to(device)
 	outputs = model.generate(inputs, max_new_tokens=50, temperature=0.2, top_p=0.9, do_sample=True)
 	print(tokenizer.decode(outputs[0]))
-	```
+```
 
 # Where about Local Loaded LLMs
 
@@ -228,15 +228,15 @@ As bitsandbytes is not available for aarch64 platform via Conda-Forge, so use pi
 
 Normally it should be loaded below:
 
-	```bash
+```bash
  	/home/pi/.cache/huggingface/hub
-  	```
+```
 
 **Optional:** To find where the ‘SmolLM-135M-Instruct’ model is loaded on Raspberry Pi run below command:
 
-	```bash
+```bash
  	$ find / -name "* SmolLM-135M-Instruct *" 2>/dev/null
-  	```
+```
 
 2. **How to Remove the ‘SmolLM-135M-Instruct’ From the Disk?**
 
@@ -244,9 +244,9 @@ Based on the above location do follows:
 
 	* Delete Model Directory:
 
-	```bash 
+```bash 
  		$ rm -rf /home/pi/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M-Instruct
-  	```
+```
 
 	* Delete Lock File Directory:
 
