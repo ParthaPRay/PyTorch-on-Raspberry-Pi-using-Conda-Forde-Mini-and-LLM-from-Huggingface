@@ -31,9 +31,9 @@
 
 2. **Next, check the architecture of Raspberry Pi**
 
-	  ```bash
+```bash
 		$ uname -a
-	   ```
+ ```
    
 	Output should be somewhat as below:
 
