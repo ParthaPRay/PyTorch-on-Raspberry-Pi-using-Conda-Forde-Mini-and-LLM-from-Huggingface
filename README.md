@@ -250,29 +250,29 @@ Based on the above location do follows:
 
 	* Delete Lock File Directory:
 
-	```bash 
+```bash 
  		$ rm -rf /home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB--SmolLM-135M-Instruct
-   	```
+```
 
 	* Finally, Verify Deletion:
 
-	```bash 
+```bash 
  		$ ls /home/pi/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M-Instruct
-   	```
+```
 
 		It should show below:
 
 			```bash 
    				ls: cannot access '/home/pi/.cache/huggingface/hub/models--HuggingFaceTB-- SmolLM-135M-Instruct': No such file or directory
        			```
-	```bash 
+```bash 
  		$ ls /home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB--SmolLM-135M-Instruct
-   	```bash 
+```bash 
 
-		It should show below:
+               It should show below:
 
-  			```bash 
+```bash 
 				ls: cannot access '/home/pi/.cache/huggingface/hub/.locks/models--HuggingFaceTB-- SmolLM-135M-Instruct ': No such file or directory
-    			```
+```
 
 
